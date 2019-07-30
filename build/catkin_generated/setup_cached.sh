@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
+export PATH="/home/mapping/catkin_ws/devel/bin:$PATH"
 export PWD="/home/mapping/catkin_ws/build"

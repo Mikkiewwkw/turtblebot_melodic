@@ -1053,3 +1053,31 @@ Parsed CXX OpenMP implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the Q_WS_X11 exist passed with the following output:
+Change Dir: /home/mapping/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69ca3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69ca3.dir/build.make CMakeFiles/cmTC_69ca3.dir/build
+make[1]: Entering directory '/home/mapping/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_69ca3.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/usr/include/qt4   -o CMakeFiles/cmTC_69ca3.dir/CheckSymbolExists.cxx.o -c /home/mapping/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_69ca3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69ca3.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_69ca3.dir/CheckSymbolExists.cxx.o  -o cmTC_69ca3 
+make[1]: Leaving directory '/home/mapping/catkin_ws/build/CMakeFiles/CMakeTmp'
+
+File /home/mapping/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_X11
+  return ((int*)(&Q_WS_X11))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
